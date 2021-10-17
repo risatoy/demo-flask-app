@@ -8,6 +8,6 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'demo-flask-app', '--image', 'gcr.io/high-torch-329323/demo-flask-app', '--region', 'REGION', '--platform', 'managed', '--port', '80']
+  args: ['run', 'deploy', 'demo-flask-app', '--image', 'gcr.io/high-torch-329323/demo-flask-app', '--region', 'us-west1', '--platform', 'managed', '--port', '80']
 images:
 - gcr.io/high-torch-329323/demo-flask-app
